@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*.mpy
+.venv/
+venv/
+env/
+
+# Firmware images (download from micropython.org instead of committing)
+*.bin
+*.elf
+*.hex
+*.uf2
+
+# Board run-time state
+mode.txt
+
+# Logs and captures
+*.log
+captures/
+
+# Secrets (e.g. future Wi-Fi credentials)
+.env
+secrets.py
+config_local.py
+
+# Editors / OS
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+desktop.ini

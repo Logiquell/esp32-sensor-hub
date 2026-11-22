@@ -1,0 +1,10 @@
+import machine, ssd1306
+i2c = machine.I2C(0, scl=machine.Pin(22), sda=machine.Pin(21), freq=400000)
+o = ssd1306.SSD1306(128, 64, i2c)
+o.rect(0, 0, 128, 64, 1)
+o.text('ESP32 RADAR', 20, 6)
+o.text('OLED OK', 36, 22)
+o.text('128x64 0x3C', 20, 38)
+o.fill_rect(10, 52, 108, 6, 1)
+o.show()
+print('OLED_TEST_DRAWN')
